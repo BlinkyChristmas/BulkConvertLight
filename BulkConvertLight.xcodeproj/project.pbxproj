@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5682349A2B8D322C002F0CE1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 568234992B8D322C002F0CE1 /* main.cpp */; };
+		568234B12B8D339A002F0CE1 /* lightfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 568234A42B8D339A002F0CE1 /* lightfile.cpp */; };
+		568234B22B8D339A002F0CE1 /* lightheader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 568234A52B8D339A002F0CE1 /* lightheader.cpp */; };
+		568234B32B8D339A002F0CE1 /* timeutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 568234AA2B8D339A002F0CE1 /* timeutil.cpp */; };
+		568234B42B8D339A002F0CE1 /* buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 568234AB2B8D339A002F0CE1 /* buffer.cpp */; };
+		568234B52B8D339A002F0CE1 /* mapfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 568234AC2B8D339A002F0CE1 /* mapfile.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,19 @@
 /* Begin PBXFileReference section */
 		568234962B8D322C002F0CE1 /* BulkConvertLight */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BulkConvertLight; sourceTree = BUILT_PRODUCTS_DIR; };
 		568234992B8D322C002F0CE1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		568234A12B8D3234002F0CE1 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		568234A42B8D339A002F0CE1 /* lightfile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lightfile.cpp; sourceTree = "<group>"; };
+		568234A52B8D339A002F0CE1 /* lightheader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lightheader.cpp; sourceTree = "<group>"; };
+		568234A62B8D339A002F0CE1 /* lightheader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lightheader.hpp; sourceTree = "<group>"; };
+		568234A72B8D339A002F0CE1 /* lightfile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lightfile.hpp; sourceTree = "<group>"; };
+		568234A92B8D339A002F0CE1 /* mapfile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mapfile.hpp; sourceTree = "<group>"; };
+		568234AA2B8D339A002F0CE1 /* timeutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timeutil.cpp; sourceTree = "<group>"; };
+		568234AB2B8D339A002F0CE1 /* buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = buffer.cpp; sourceTree = "<group>"; };
+		568234AC2B8D339A002F0CE1 /* mapfile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mapfile.cpp; sourceTree = "<group>"; };
+		568234AD2B8D339A002F0CE1 /* timeutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = timeutil.hpp; sourceTree = "<group>"; };
+		568234AE2B8D339A002F0CE1 /* strutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = strutil.hpp; sourceTree = "<group>"; };
+		568234AF2B8D339A002F0CE1 /* dbgutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dbgutil.hpp; sourceTree = "<group>"; };
+		568234B02B8D339A002F0CE1 /* buffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = buffer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,8 +59,11 @@
 		5682348D2B8D322C002F0CE1 = {
 			isa = PBXGroup;
 			children = (
+				568234A32B8D339A002F0CE1 /* lightfile */,
+				568234A82B8D339A002F0CE1 /* utility */,
 				568234982B8D322C002F0CE1 /* BulkConvertLight */,
 				568234972B8D322C002F0CE1 /* Products */,
+				568234A02B8D3234002F0CE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +81,40 @@
 				568234992B8D322C002F0CE1 /* main.cpp */,
 			);
 			path = BulkConvertLight;
+			sourceTree = "<group>";
+		};
+		568234A02B8D3234002F0CE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				568234A12B8D3234002F0CE1 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		568234A32B8D339A002F0CE1 /* lightfile */ = {
+			isa = PBXGroup;
+			children = (
+				568234A42B8D339A002F0CE1 /* lightfile.cpp */,
+				568234A52B8D339A002F0CE1 /* lightheader.cpp */,
+				568234A62B8D339A002F0CE1 /* lightheader.hpp */,
+				568234A72B8D339A002F0CE1 /* lightfile.hpp */,
+			);
+			path = lightfile;
+			sourceTree = "<group>";
+		};
+		568234A82B8D339A002F0CE1 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				568234A92B8D339A002F0CE1 /* mapfile.hpp */,
+				568234AA2B8D339A002F0CE1 /* timeutil.cpp */,
+				568234AB2B8D339A002F0CE1 /* buffer.cpp */,
+				568234AC2B8D339A002F0CE1 /* mapfile.cpp */,
+				568234AD2B8D339A002F0CE1 /* timeutil.hpp */,
+				568234AE2B8D339A002F0CE1 /* strutil.hpp */,
+				568234AF2B8D339A002F0CE1 /* dbgutil.hpp */,
+				568234B02B8D339A002F0CE1 /* buffer.hpp */,
+			);
+			path = utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +145,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1520;
+				ORGANIZATIONNAME = "Charles Kerr";
 				TargetAttributes = {
 					568234952B8D322C002F0CE1 = {
 						CreatedOnToolsVersion = 15.2;
@@ -119,6 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568234B22B8D339A002F0CE1 /* lightheader.cpp in Sources */,
+				568234B12B8D339A002F0CE1 /* lightfile.cpp in Sources */,
+				568234B42B8D339A002F0CE1 /* buffer.cpp in Sources */,
+				568234B32B8D339A002F0CE1 /* timeutil.cpp in Sources */,
+				568234B52B8D339A002F0CE1 /* mapfile.cpp in Sources */,
 				5682349A2B8D322C002F0CE1 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +309,7 @@
 				DEVELOPMENT_TEAM = CF264WE69M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR;
 			};
 			name = Debug;
 		};
@@ -258,6 +320,7 @@
 				DEVELOPMENT_TEAM = CF264WE69M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR;
 			};
 			name = Release;
 		};
